@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="@dimen/nav_header_vertical_spacing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/routeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="serif"
+                android:text="测试线路"
+                android:textColor="@color/defaultColor"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/result_minor_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LastStop" />
+
+    <TextView
+        android:id="@+id/StopsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="4站"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/firstStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="serif"
+        android:text="始发 松江站"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/StopsNumber"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/StopsNumber" />
+
+    <TextView
+        android:id="@+id/LastStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="serif"
+        android:text="终到 米花街"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/StopsNumber"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/StopsNumber" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:gravity="center_vertical"
+        android:text="/"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/StopsNumber"
+        app:layout_constraintStart_toEndOf="@+id/StopsNumber"
+        app:layout_constraintTop_toTopOf="@+id/StopsNumber" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="/"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/StopsNumber"
+        app:layout_constraintStart_toEndOf="@+id/firstStop"
+        app:layout_constraintTop_toTopOf="@+id/StopsNumber" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/showmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="serif"
+                android:text="地图显示"
+                android:textColor="@color/defaultColor"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
